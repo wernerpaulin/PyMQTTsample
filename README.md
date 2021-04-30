@@ -2,26 +2,26 @@
 Simple MQTT sample made in Python
 
 <br />
-Link to Repository: https://github.com/wernerpaulin/mqttscanner
+Link to Repository: https://github.com/wernerpaulin/PyMQTTsample
 
 <!-- APP SHIELDS -->
-[![GitHub issues](https://img.shields.io/github/issues/wernerpaulin/mqttscanner)](https://github.com/wernerpaulin/mqttscanner/issues)
-[![GitHub forks](https://img.shields.io/github/forks/wernerpaulin/mqttscanner)](https://github.com/wernerpaulin/mqttscanner/network)
-[![GitHub stars](https://img.shields.io/github/stars/wernerpaulin/mqttscanner)](https://github.com/wernerpaulin/mqttscanner/stargazers)
-[![GitHub license](https://img.shields.io/github/license/wernerpaulin/mqttscanner)](https://github.com/wernerpaulin/mqttscanner/blob/main/LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/wernerpaulin/PyMQTTsample)](https://github.com/wernerpaulin/PyMQTTsample/issues)
+[![GitHub forks](https://img.shields.io/github/forks/wernerpaulin/PyMQTTsample)](https://github.com/wernerpaulin/PyMQTTsample/network)
+[![GitHub stars](https://img.shields.io/github/stars/wernerpaulin/PyMQTTsample)](https://github.com/wernerpaulin/PyMQTTsample/stargazers)
+[![GitHub license](https://img.shields.io/github/license/wernerpaulin/PyMQTTsample)](https://github.com/wernerpaulin/PyMQTTsample/blob/main/LICENSE)
 
 
 <!-- APP LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/wernerpaulin/mqttscanner">
+  <a href="https://github.com/wernerpaulin/PyMQTTsample">
     <img src="images/icon.png" alt="Logo" width="200" height="200">
   </a>
 
-  <h3 align="center">mqttscanner</h3>
+  <h3 align="center">PyMQTTsample</h3>
 
   <p align="center">
-    This app is written in Python® 3. Scans MQTT topics of a certain broker and its values to an time series database built on InfluxDB®.
+    This app is written in Python® 3. It shows a simple implementation of MQTT for app handling demonstration.
   </p>
 </p>
 
@@ -70,8 +70,7 @@ Link to Repository: https://github.com/wernerpaulin/mqttscanner
      width="200"/>
 
 ### Features
-* automatically subscribes to all registered MQTT topics of a certain broker
-* transforms all topics to data items and pushes them into an InfluxDB time series data base
+* tbd
 
 
 
@@ -80,7 +79,6 @@ Link to Repository: https://github.com/wernerpaulin/mqttscanner
 | -------------- | ----------- |
 | [Python®](https://www.python.org/) | asyncio for concurrent execution of coroutines |
 | [Eclipse Paho®](https://www.eclipse.org/paho/) | MQTT client |
-| [InfluxDB®](https://www.influxdata.com/) | Time series database |
 | [Docker®](https://www.docker.com/) | Container technology |
 
 
@@ -100,11 +98,10 @@ It also requires an influxdb app running on the Runtime or on a different host.
 
 <!-- COMMUNICATION -->
 ## Communication
+### Interfaces
+The app subscribes to the following topics:
 
-### Published Ports By This App
-| Container Port | Protocol | Description |
-| -------------- | -------- | ----------- |
-| n.a. | | |
+The app publishes the following topics:
 
 **Please note: Ports can be mapped to different host ports in the machine settings**
 
@@ -138,4 +135,3 @@ Mount points are access points to volumes (like paths) provided to the app to re
 * "Python®" and the Python logos are trademarks or registered trademarks of the Python Software Foundation.
 * "Eclipse®", "Mosquitto®", Paho® and the respective logos are trademarks or registered trademarks of the Eclipse Foundation.
 * "Docker®" and "Docker Hub®" are trademarks or registered trademarks of Docker.
-* "InfluxDB®" and the respective logo is a trademark or registered trademark by InfluxData, which is not affiliated with, and does not endorse, this product.
