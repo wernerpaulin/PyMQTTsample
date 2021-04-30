@@ -100,8 +100,15 @@ It also requires an influxdb app running on the Runtime or on a different host.
 ## Communication
 ### Interfaces
 The app subscribes to the following topics:
+| Topic | Value Example |
+| -------------- | ----------- |
+| mosaiq.lenze.pymqttsample/parameter | ``` "{"threshold": 200, "step": 1}" ``` |
+
 
 The app publishes the following topics:
+| Topic | Value Example |
+| -------------- | ----------- |
+| mosaiq.lenze.pymqttsample/monitor | ``` "{"value": 1}" ``` |
 
 **Please note: Ports can be mapped to different host ports in the machine settings**
 
