@@ -102,13 +102,12 @@ It also requires an influxdb app running on the Runtime or on a different host.
 The app subscribes to the following topics:
 | Topic | Value Example |
 | -------------- | ----------- |
-| mosaiq.lenze.pymqttsample/parameter | ``` "{"threshold": 200, "step": 1}" ``` |
-
+| pymqttsample.lenze.mosaiq/parameter | ``` "{"threshold": 200, "step": 1}" ``` |
 
 The app publishes the following topics:
 | Topic | Value Example |
 | -------------- | ----------- |
-| mosaiq.lenze.pymqttsample/monitor | ``` "{"value": 1}" ``` |
+| pymqttsample.lenze.mosaiq/monitor | ``` "{"value": 1}" ``` |
 
 **Please note: Ports can be mapped to different host ports in the machine settings**
 
@@ -119,9 +118,11 @@ The app publishes the following topics:
 Environmental variables are used to initialize or define a certain functionality of an app and can be changed in the machine settings:
 | Variable | Default Value | Changeable by User | Description | 
 | -------- | ------------- | ------------------ | ----------- |
-| MQTT_BROKER_IP | mosaiq.eclipsemosquitto | yes | Hostname or IP address of MQTT broker | 
+| MQTT_BROKER_IP | localhost | yes | Hostname or IP address of MQTT broker | 
 | MQTT_BROKER_PORT | 1883 | yes | Port used by the MQTT broker |
 | MQTT_BROKER_KEEPALIVE | 60 | yes | Maximum time that this app does not communicate with the broker |
+| CYCLE_TIME_APP | 0.2 | yes | Cyclic time of app |
+
 
 ### Volumes
 Mount points are access points to volumes (like paths) provided to the app to read and write data:

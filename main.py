@@ -7,14 +7,14 @@ from helper.mqtt_handler import mqttHandler
 
 
 #check for environmental variables in case this app is started in a docker container
-MQTT_BROKER_IP = initializeENV("MQTT_BROKER_IP", "mosaiq.eclipsemosquitto")
+MQTT_BROKER_IP = initializeENV("MQTT_BROKER_IP", "localhost")
 MQTT_BROKER_PORT = initializeENV("MQTT_BROKER_PORT", 1883)
 MQTT_BROKER_KEEPALIVE = initializeENV("MQTT_BROKER_KEEPALIVE", 60)
 
 CYCLE_TIME_APP = initializeENV("CYCLE_TIME_APP", 0.2)
 
-TOPIC_PARAMETER = "mosaiq.lenze.pymqttsample/parameter"
-TOPIC_MONITOR = "mosaiq.lenze.pymqttsample/monitor"
+TOPIC_PARAMETER = "pymqttsample.lenze.mosaiq/parameter"
+TOPIC_MONITOR = "pymqttsample.lenze.mosaiq/monitor"
 
 
 def OnMessageReceivedMQTT(topic, payload):
