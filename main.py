@@ -11,7 +11,7 @@ MQTT_BROKER_IP = initializeENV("MQTT_BROKER_IP", "localhost")
 MQTT_BROKER_PORT = int(initializeENV("MQTT_BROKER_PORT", 1883))
 MQTT_BROKER_KEEPALIVE = int(initializeENV("MQTT_BROKER_KEEPALIVE", 60))
 
-CYCLE_TIME_APP = initializeENV("CYCLE_TIME_APP", 0.2)
+CYCLE_TIME_APP = float(initializeENV("CYCLE_TIME_APP", 0.2))
 
 TOPIC_PARAMETER = "pymqttsample.lenze.mosaiq/parameter"
 TOPIC_MONITOR = "pymqttsample.lenze.mosaiq/monitor"
